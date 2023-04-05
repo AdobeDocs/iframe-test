@@ -43,7 +43,9 @@
       });
 
       // Enable buttons once connected
-      connection.promise.then((parent) => {
+      
+      setTimeout(() => {
+        connection.promise.then((parent) => {
         signIn.onclick = () => parent.signIn();
         signOut.onclick = () => parent.signOut();
         scrollTop.onclick = () => parent.scrollTop();
@@ -68,6 +70,9 @@
           parent.setHeight(`${document.body.scrollHeight}px`);
         });
       });
+        
+      }, 500)
+      
     };
   </script>
   <h1>iFrame source file</h1>
