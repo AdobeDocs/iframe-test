@@ -11,7 +11,7 @@
  */
 
 module.exports = {
-  pathPrefix: process.env.PATH_PREFIX || '/iframe-test/',
+  pathPrefix: process.env.PATH_PREFIX || '/photoshop/api/',
   siteMetadata: {
     pages: [
       {
